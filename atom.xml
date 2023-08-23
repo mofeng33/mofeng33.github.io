@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-21T14:27:30+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">MoFeng Blog</title><subtitle>It really is the best.</subtitle><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><entry><title type="html">使用Github+Jekyll搭建免费的博客</title><link href="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/" rel="alternate" type="text/html" title="使用Github+Jekyll搭建免费的博客" /><published>2023-08-17T14:23:02+08:00</published><updated>2023-08-17T14:23:02+08:00</updated><id>http://localhost:4000/skills/how-to-deploy-a-blog-for-free</id><content type="html" xml:base="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/"><![CDATA[<blockquote>
+  <p>实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。</p>
+</blockquote>
+
+<p>以下是一些基本步骤：</p>
+
+<h3 id="1创建一个github账号">1.创建一个Github账号</h3>
+<p>请先在<a href="https://github.com/">Github</a>上注册一个账号。</p>
+
+<h3 id="2安装github-desktop">2.安装Github Desktop</h3>
+<p>在本地电脑上安装Github Desktop,<a href="https://desktop.github.com/">下载地址</a></p>
+
+<h3 id="3在github上创建一个新的仓库">3.在Github上创建一个新的仓库</h3>
+<p>登陆到GitHub，点击右上角的“+”图标，选择“New Repository”来创建一个新的仓库。
+以你的Github用户名给这个新仓库命名，格式为”username.github.io”，如你的用户名为luby，则仓库名应该为luby.github.io
+这也是你的网站的域名，在部署完毕后可直接访问。</p>
+
+<h3 id="4克隆仓库到本地">4.克隆仓库到本地</h3>
+<p>打开终端，使用’git clone https://github.com/username/username.github.io.git’ (注：请将username替换成你的Github用户名) 将你的新仓库下载到本地。</p>
+
+<h3 id="5安装jekyll静态网站生成器">5.安装Jekyll静态网站生成器</h3>
+<p>在终端中，进入到刚才克隆下来的仓库文件夹，然后运行’gem install jekyll’安装Jekyll及其依赖。</p>
+
+<h3 id="6创建jekyll网站">6.创建Jekyll网站</h3>
+<p>使用Jekyll命令’Jekyll new .’在当前目录创建一个基本的Jekyll网站。
+<a href="https://jekyllrb.com/">Jekyll文档请参考</a> <a href="https://jekyllcn.com/">Jekyll中文版文档</a></p>
+
+<h3 id="7本地预览">7.本地预览</h3>
+<p>在终端中运行’bundle exec jekyll serve’来预览你的网站，地址通常是’http://localhost:4000或http://127.0.0.1:4000/’</p>
+
+<h3 id="8提交变更并推送到github">8.提交变更并推送到Github</h3>
+<p>当编辑完网站内容后，将’_site’目录下的文件推送到到Github。推送完毕后，就可以直接通过https://username.github.io访问你的网站。</p>
+
+<h2 id="jekyll也有许多丰富的主题以下为官方推荐的几个主题站">Jekyll也有许多丰富的主题，以下为官方推荐的几个主题站</h2>
+<ul>
+  <li><a href="https://github.com/topics/jekyll-theme">Github上的模板</a></li>
+  <li><a href="https://jamstackthemes.dev/ssg/jekyll/">jamstackthems.dev</a></li>
+  <li><a href="http://jekyllthemes.org/">jekyllthemes.org</a></li>
+  <li><a href="https://jekyllthemes.io/">jekyllthemes.io</a></li>
+  <li><a href="https://jekyll-themes.com/">jekyll-themes.com</a></li>
+</ul>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="skills" /><category term="website" /><category term="jekyll" /><summary type="html"><![CDATA[实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。]]></summary></entry><entry><title type="html">Layout: Hero Image</title><link href="http://localhost:4000/layout/hero-image/" rel="alternate" type="text/html" title="Layout: Hero Image" /><published>2023-08-16T00:00:00+08:00</published><updated>2023-08-16T00:00:00+08:00</updated><id>http://localhost:4000/layout/hero-image</id><content type="html" xml:base="http://localhost:4000/layout/hero-image/"><![CDATA[<p>This post should display a large hero image at the top of a page.</p>
+
+<p>This post tests a horizontal image using the following YAML Front Matter:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span>
+  <span class="na">path</span><span class="pi">:</span> <span class="s">/images/eder-oliveira-180877.jpg</span>
+</code></pre></div></div>
+
+<p>Hero images can also be assigned more succinctly when <code class="language-plaintext highlighter-rouge">thumbnail</code> or <code class="language-plaintext highlighter-rouge">caption</code> are not used.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span> <span class="s">/images/eder-oliveira-180877.jpg</span>
+</code></pre></div></div>
+
+<p>Tall images will push content down the page. <code class="language-plaintext highlighter-rouge">1600 x 600</code> is a good middle-ground size to aim for.</p>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="Layout" /><category term="content" /><category term="image" /><category term="layout" /><summary type="html"><![CDATA[This post should display a large hero image at the top of a page.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/so-simple-sample-image-3.jpg" /><media:content medium="image" url="http://localhost:4000/images/so-simple-sample-image-3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2009-05-15T00:00:00+08:00</published><updated>2017-03-10T03:25:52+08:00</updated><id>http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/"><![CDATA[<p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.</p>
+
+<h2 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h2>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ol>
+      <li>ordered item</li>
+      <li>ordered item</li>
+    </ol>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h2 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h2>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ul>
+      <li>unordered item</li>
+      <li>unordered item</li>
+    </ul>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h2 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ol>
+      <li>ordered</li>
+      <li>ordered
+        <ul>
+          <li>unordered item</li>
+          <li>unordered item</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>
+
+<h2 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ul>
+      <li>unordered</li>
+      <li>unordered
+        <ol>
+          <li><strong>ordered item</strong></li>
+          <li><strong>ordered item</strong></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="Edge Case" /><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html"><![CDATA[Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.]]></summary></entry></feed>
