@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-21T14:27:30+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">MoFeng Blog</title><subtitle>It really is the best.</subtitle><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><entry><title type="html">使用Github+Jekyll搭建免费的博客</title><link href="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/" rel="alternate" type="text/html" title="使用Github+Jekyll搭建免费的博客" /><published>2023-08-17T14:23:02+08:00</published><updated>2023-08-17T14:23:02+08:00</updated><id>http://localhost:4000/skills/how-to-deploy-a-blog-for-free</id><content type="html" xml:base="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://mofeng33.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mofeng33.github.io/" rel="alternate" type="text/html" /><updated>2023-08-24T15:41:46+08:00</updated><id>https://mofeng33.github.io/atom.xml</id><title type="html">墨風周刊</title><subtitle>这里记录每周值得分享的科技内容，周六发布。</subtitle><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><entry><title type="html">使用Github+Jekyll搭建免费的博客</title><link href="https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/" rel="alternate" type="text/html" title="使用Github+Jekyll搭建免费的博客" /><published>2023-08-17T14:23:02+08:00</published><updated>2023-08-17T14:23:02+08:00</updated><id>https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free</id><content type="html" xml:base="https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/"><![CDATA[<blockquote>
   <p>实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。</p>
 </blockquote>
 
@@ -38,91 +38,4 @@
   <li><a href="http://jekyllthemes.org/">jekyllthemes.org</a></li>
   <li><a href="https://jekyllthemes.io/">jekyllthemes.io</a></li>
   <li><a href="https://jekyll-themes.com/">jekyll-themes.com</a></li>
-</ul>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="skills" /><category term="website" /><category term="jekyll" /><summary type="html"><![CDATA[实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。]]></summary></entry><entry><title type="html">Layout: Hero Image</title><link href="http://localhost:4000/layout/hero-image/" rel="alternate" type="text/html" title="Layout: Hero Image" /><published>2023-08-16T00:00:00+08:00</published><updated>2023-08-16T00:00:00+08:00</updated><id>http://localhost:4000/layout/hero-image</id><content type="html" xml:base="http://localhost:4000/layout/hero-image/"><![CDATA[<p>This post should display a large hero image at the top of a page.</p>
-
-<p>This post tests a horizontal image using the following YAML Front Matter:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span>
-  <span class="na">path</span><span class="pi">:</span> <span class="s">/images/eder-oliveira-180877.jpg</span>
-</code></pre></div></div>
-
-<p>Hero images can also be assigned more succinctly when <code class="language-plaintext highlighter-rouge">thumbnail</code> or <code class="language-plaintext highlighter-rouge">caption</code> are not used.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span> <span class="s">/images/eder-oliveira-180877.jpg</span>
-</code></pre></div></div>
-
-<p>Tall images will push content down the page. <code class="language-plaintext highlighter-rouge">1600 x 600</code> is a good middle-ground size to aim for.</p>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="Layout" /><category term="content" /><category term="image" /><category term="layout" /><summary type="html"><![CDATA[This post should display a large hero image at the top of a page.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/so-simple-sample-image-3.jpg" /><media:content medium="image" url="http://localhost:4000/images/so-simple-sample-image-3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2009-05-15T00:00:00+08:00</published><updated>2017-03-10T03:25:52+08:00</updated><id>http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/"><![CDATA[<p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.</p>
-
-<h2 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h2>
-
-<ol>
-  <li>ordered item</li>
-  <li>ordered item
-    <ul>
-      <li><strong>unordered</strong></li>
-      <li><strong>unordered</strong></li>
-    </ul>
-    <ol>
-      <li>ordered item</li>
-      <li>ordered item</li>
-    </ol>
-  </li>
-  <li>ordered item</li>
-  <li>ordered item</li>
-</ol>
-
-<h2 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h2>
-
-<ol>
-  <li>ordered item</li>
-  <li>ordered item
-    <ul>
-      <li><strong>unordered</strong></li>
-      <li><strong>unordered</strong></li>
-    </ul>
-    <ul>
-      <li>unordered item</li>
-      <li>unordered item</li>
-    </ul>
-  </li>
-  <li>ordered item</li>
-  <li>ordered item</li>
-</ol>
-
-<h2 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h2>
-
-<ul>
-  <li>unordered item</li>
-  <li>unordered item
-    <ol>
-      <li>ordered</li>
-      <li>ordered
-        <ul>
-          <li>unordered item</li>
-          <li>unordered item</li>
-        </ul>
-      </li>
-    </ol>
-  </li>
-  <li>unordered item</li>
-  <li>unordered item</li>
-</ul>
-
-<h2 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h2>
-
-<ul>
-  <li>unordered item</li>
-  <li>unordered item
-    <ul>
-      <li>unordered</li>
-      <li>unordered
-        <ol>
-          <li><strong>ordered item</strong></li>
-          <li><strong>ordered item</strong></li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li>unordered item</li>
-  <li>unordered item</li>
-</ul>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="Edge Case" /><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html"><![CDATA[Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.]]></summary></entry></feed>
+</ul>]]></content><author><name>MoFeng</name><email>mofeng33@outlook.com</email></author><category term="skills" /><category term="website" /><category term="jekyll" /><summary type="html"><![CDATA[实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。]]></summary></entry></feed>
