@@ -20,11 +20,11 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="使用Github+Jekyll搭建免费的博客" />
 <meta name="author" content="MoFeng" />
-<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale" content="en_us" />
 <meta name="description" content="实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。" />
 <meta property="og:description" content="实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。" />
-<link rel="canonical" href="https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/" />
-<meta property="og:url" content="https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/" />
+<link rel="canonical" href="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/" />
+<meta property="og:url" content="http://localhost:4000/skills/how-to-deploy-a-blog-for-free/" />
 <meta property="og:site_name" content="墨風周刊" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-08-17T14:23:02+08:00" />
@@ -33,7 +33,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@MoFeng" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MoFeng"},"dateModified":"2023-08-17T14:23:02+08:00","datePublished":"2023-08-17T14:23:02+08:00","description":"实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。","headline":"使用Github+Jekyll搭建免费的博客","mainEntityOfPage":{"@type":"WebPage","@id":"https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/"},"url":"https://mofeng33.github.io/skills/how-to-deploy-a-blog-for-free/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MoFeng"},"dateModified":"2023-08-17T14:23:02+08:00","datePublished":"2023-08-17T14:23:02+08:00","description":"实现原理：Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。","headline":"使用Github+Jekyll搭建免费的博客","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/skills/how-to-deploy-a-blog-for-free/"},"url":"http://localhost:4000/skills/how-to-deploy-a-blog-for-free/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -62,11 +62,11 @@
 
   <body class="layout--post  使用github-jekyll搭建免费的博客">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">跳转链接</h2>
+  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
-    <li><a href="#primary-nav" class="screen-reader-shortcut">跳转到菜单</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">跳转到内容</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">跳转到底部</a></li>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
 
@@ -74,7 +74,7 @@
   <div class="navigation-wrapper">
     <a href="#menu-toggle" id="menu-toggle">Menu</a>
     <nav id="primary-nav" class="site-nav animated drop">
-      <ul><li><a href="/">Home</a></li><li><a href="/posts/">Posts</a></li><li><a href="/categories/">Categories</a></li><li><a href="/tags/">Tags</a></li><li><a href="/search/">Search</a></li></ul>
+      <ul><li><a href="/about/">关于</a></li><li><a href="/posts/">文章</a></li><li><a href="/categories/">分类</a></li><li><a href="/links/">链接</a></li></ul>
     </nav>
   </div><!-- /.navigation-wrapper -->
 
@@ -87,7 +87,7 @@
       
         <div class="site-title animated fadeIn"><a href="/">墨風周刊</a></div>
       
-      <p class="site-description animated fadeIn" itemprop="description">这里记录每周值得分享的科技内容，周六发布。</p>
+      <p class="site-description animated fadeIn" itemprop="description">这里记录每周值得分享的科技内容</p>
     
   </div>
 </header><!-- /.masthead -->
@@ -108,30 +108,30 @@
 
       <div class="page-sidebar">
         <div class="page-author h-card p-author"><img src="/images/mofeng-photo.jpg" class="author-avatar u-photo" alt="MoFeng"><div class="author-info"><div class="author-name">
-        <em>by</em> <span class="p-name">MoFeng</span>
+        <span class="p-name">MoFeng</span>
       </div><ul class="author-links"><li class="author-link">
             <a class="u-url" rel="me" href=""><i class="fas fa-link fa-lg" title=""></i></a>
           </li></ul>
 
-<span class="read-time">~1 分钟阅读</span>
+<span class="read-time">~1 min read</span>
 
-    <time class="page-date dt-published" datetime="2023-08-17T14:23:02+08:00"><a class="u-url" href="">August 17, 2023</a>
+    <time class="page-date dt-published" datetime="2023-08-17T14:23:02+08:00"><a class="u-url" href="">2023-08-17</a>
 </time>
 
   </div>
 </div>
 
         
-  <h3 class="page-taxonomies-title">分类</h3>
+  <h3 class="page-taxonomies-title">Categories</h3>
   
-  <ul class="page-taxonomies"><li class="page-taxonomy"><a class="p-category" href="/categories/#skills" title="提交页面 skills">skills</a></li>
+  <ul class="page-taxonomies"><li class="page-taxonomy"><a class="p-category" href="/categories/#skills" title="Pages filed under skills">skills</a></li>
   </ul>
 
 
         
-  <h3 class="page-taxonomies-title">标签</h3>
+  <h3 class="page-taxonomies-title">Tags</h3>
   
-  <ul class="page-taxonomies"><li class="page-taxonomy"><a href="/tags/#jekyll" title="页面标签 jekyll" rel="tag">jekyll</a></li><li class="page-taxonomy"><a href="/tags/#website" title="页面标签 website" rel="tag">website</a></li>
+  <ul class="page-taxonomies"><li class="page-taxonomy"><a href="/tags/#jekyll" title="Pages tagged jekyll" rel="tag">jekyll</a></li><li class="page-taxonomy"><a href="/tags/#website" title="Pages tagged website" rel="tag">website</a></li>
   </ul>
 
 
@@ -186,10 +186,10 @@
 
         
           <div class="page-share">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmofeng33.github.io%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>分享</span></a>
-  <a href="https://twitter.com/intent/tweet?text=%E4%BD%BF%E7%94%A8Github%2BJekyll%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2%20https%3A%2F%2Fmofeng33.github.io%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmofeng33.github.io%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
-  <a href="https://reddit.com/submit?title=%E4%BD%BF%E7%94%A8Github%2BJekyll%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2&url=https%3A%2F%2Fmofeng33.github.io%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%E4%BD%BF%E7%94%A8Github%2BJekyll%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2%20http%3A%2F%2Flocalhost%3A4000%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=%E4%BD%BF%E7%94%A8Github%2BJekyll%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2&url=http%3A%2F%2Flocalhost%3A4000%2Fskills%2Fhow-to-deploy-a-blog-for-free%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
 </div>
 
         
@@ -199,6 +199,14 @@
         <nav class="page-pagination" role="navigation">
   
 
+  
+    <a class="page-next" href="/markup/">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        Markup: Syntax Highlighting
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
   
 </nav>
 
@@ -210,7 +218,6 @@
 
     <footer id="footer" class="site-footer">
   <!-- start custom footer snippets -->
-
 <!-- end custom footer snippets -->
 <div class="social-icons"><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
     

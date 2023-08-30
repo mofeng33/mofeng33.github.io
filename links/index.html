@@ -16,23 +16,23 @@
   
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Search | 墨風周刊</title>
+<title>Link | 墨風周刊</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Search" />
+<meta property="og:title" content="Link" />
 <meta name="author" content="MoFeng" />
 <meta property="og:locale" content="en_us" />
 <meta name="description" content="这里记录每周值得分享的科技内容" />
 <meta property="og:description" content="这里记录每周值得分享的科技内容" />
-<link rel="canonical" href="http://localhost:4000/search/" />
-<meta property="og:url" content="http://localhost:4000/search/" />
+<link rel="canonical" href="http://localhost:4000/links/" />
+<meta property="og:url" content="http://localhost:4000/links/" />
 <meta property="og:site_name" content="墨風周刊" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Search" />
+<meta property="twitter:title" content="Link" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@MoFeng" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"MoFeng"},"description":"这里记录每周值得分享的科技内容","headline":"Search","url":"http://localhost:4000/search/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"MoFeng"},"description":"这里记录每周值得分享的科技内容","headline":"Link","url":"http://localhost:4000/links/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -59,7 +59,7 @@
 </head>
 
 
-  <body class="layout--search  search">
+  <body class="layout--page  link">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -100,18 +100,17 @@
       <header class="page-header">
         
         
-          <h1 id="page-title" class="page-title">Search</h1>
+          <h1 id="page-title" class="page-title">Link</h1>
         
       </header>
       <div class="page-content">
-        
+        <h2 id="设计工具">设计工具</h2>
 
-
-<form onsubmit="return false;">
-  <input type="input" id="search" class="search-input" placeholder="Enter your search term..." autofocus>
-</form>
-
-<div id="results"></div>
+<ul>
+  <li><a href="https://www.figma.com/" target="_blank">Figma</a> 在线原型制作工
+具，具有强大的交互功能</li>
+  <li><a href="https://www.canva.com" target="_blank">Canava</a> 免费在线图形设计工具,有丰富的各种社交媒体帖子模板。</li>
+</ul>
 
 
         
@@ -164,68 +163,6 @@ MathJax = {
 </script>
 
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-<script src="/assets/js/lunr/lunr.min.js"></script>
-  <script src="/assets/js/search-data.js"></script>
-  <script>
-    var idx = lunr(function () {
-      
-      // the, the normal lunr index initialization
-      this.field('title')
-      this.field('excerpt')
-      this.field('categories')
-      this.field('tags')
-      this.ref('id')
-
-      this.pipeline.remove(lunr.trimmer)
-
-      // add documents to index
-      for (var item in store) {
-        this.add({
-          title: store[item].title,
-          excerpt: store[item].excerpt,
-          categories: store[item].categories,
-          tags: store[item].tags,
-          id: item
-        })
-      }
-    });
-
-    console.log(jQuery.type(idx));
-
-    $(document).ready(function () {
-      $('input#search').on('keyup', function () {
-        var resultdiv = $('#results');
-        var query = $(this).val().toLowerCase();
-        var result =
-          idx.query(function (q) {
-            query.split(lunr.tokenizer.separator).forEach(function (term) {
-              q.term(term, { boost: 100 })
-              if (query.lastIndexOf(" ") != query.length - 1) {
-                q.term(term, { usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
-              }
-              if (term != "") {
-                q.term(term, { usePipeline: false, editDistance: 1, boost: 1 })
-              }
-            })
-          });
-        resultdiv.empty();
-        resultdiv.prepend('<p class="results__found">' + result.length + ' Result(s) found</p>');
-        for (var item in result) {
-          var ref = result[item].ref;
-          var searchitem =
-            '<article class="entry">' +
-              '<h3 class="entry-title">' +
-                '<a href="' + store[ref].url + '">' + store[ref].title + '</a>' +
-              '</h3>' +
-              '<div class="entry-excerpt">' +
-                '<p>' + store[ref].excerpt.split(" ").splice(0, 20).join(" ") + '...</p>' +
-              '</div>' +
-            '</article>';
-          resultdiv.append(searchitem);
-        }
-      });
-    });
-  </script>
 
   </body>
 
